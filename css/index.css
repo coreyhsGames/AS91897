@@ -56,11 +56,12 @@ body {
     align-items: center;
     z-index: 1;
     justify-content: flex-start;
+    padding: 10px;
 }
 
 .nav-bar-horizontal a,
 .nav-bar-horizontal .hamburger {
-    color: #f2f2f2;
+    color: #ffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -89,9 +90,24 @@ body {
     color: #eb48d3;
 }
 
-.nav-bar-horizontal img {
+.nav-bar-horizontal a.active:hover,
+.nav-bar-vertical a.active:hover {
+    background-color: #e2e2e2;
+}
+
+.logo {
     width: 200px;
     height: 110px;
+    margin: 5px 20px 5px 20px;
+    background-color: #ffff;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.logo-2 {
+    width: 250px;
+    height: 138px;
     margin: 5px 20px 5px 20px;
     background-color: #ffff;
     border-radius: 0.77vh;
@@ -120,7 +136,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.5rem;
-    color: #f2f2f2;
+    color: #ffff;
     display: block;
     transition: 0.3s ease;
     cursor: pointer;
@@ -228,7 +244,7 @@ h1 {
 }
 
 .shop .category .category.header h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .shop .category .card-container {
@@ -266,12 +282,12 @@ h1 {
 }
 
 .shop .category .card .card-info h4 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
 .shop .category .card .card-info p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #525252;
     margin-top: auto;
 }
@@ -285,7 +301,7 @@ h1 {
 .rating {
     display: inline-block;
     position: relative;
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 .rating label {
@@ -339,150 +355,69 @@ h1 {
     color: #f8c82d;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 1024px) {
-    .nav-bar-horizontal .hamburger {
-        position: absolute;
-        display: block;
-        right: 10px;
-    }
-
-    .nav-bar-horizontal a {
-        display: none;
-    }
-
-    .left-side {
-        padding-left: unset;
-        left: unset;
-    }
-
-    .img-1 {
-        grid-column: 1 / 5;
-    }
-
-    .paragraph-1 {
-        grid-column: 1 / 5;
-        grid-row: 3;
-    }
-
-    .paragraph-2 {
-        grid-row: 4;
-    }
-
-    .img-2 {
-        grid-row: 5;
-    }
+.footer {
+    background-color: #e624b3;
+    padding: 50px;
 }
 
-@media only screen and (max-width: 780px) {
-    .nav-bar-horizontal img {
-        width: 300px;
-    }
-
-    .text h1 {
-        font-size: 60px;
-    }
-
-    .text h2 {
-        font-size: 20px;
-    }
-
-    .btn-section .text {
-        font-size: 22px;
-    }
-
-    .btn-section svg {
-        width: 35px;
-        height: 35px;
-    }
+.footer-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-@media only screen and (max-width: 550px) {
-    .text h1 {
-        font-size: 50px;
-    }
-
-    .text h2 {
-        font-size: 18px;
-    }
-
-    .btn-section .text {
-        font-size: 18px;
-    }
-
-    .btn-section svg {
-        width: 30px;
-        height: 30px;
-    }
+.footer-main {
+    color: #ffff;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease;
+    margin: 0px 10px 0px 10px;
+    border-radius: 0.77vh;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #c907fb;
+    margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 475px) {
-    .nav-bar-horizontal img {
-        width: 250px;
-    }
-
-    .text h1 {
-        font-size: 40px;
-    }
-
-    .text h2 {
-        font-size: 16px;
-    }
-
-    .btn-section .text {
-        font-size: 16px;
-    }
-
-    .btn-section svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .footer a,
-    .footer p {
-        font-size: 18px;
-    }
-
-    .about-info>div {
-        font-size: 18px;
-    }
-
-    .header-1 {
-        font-size: 32px !important;
-    }
+.footer-sub {
+    color: #e544c7;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: background-color 0.5s ease;
+    margin: 0px 10px 0px 10px;
+    border-radius: 0.77vh;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffff;
+    margin-bottom: 8px;
 }
 
-@media only screen and (max-width: 375px) {
-    .nav-bar-horizontal img {
-        width: 200px;
-    }
+.footer-main:hover {
+    background-color: #d438fb;
+}
 
-    .text h1 {
-        font-size: 32px;
-    }
+.footer-sub:hover {
+    background-color: #e2e2e2;
+}
 
-    .btn-section {
-        flex-direction: column;
-        align-items: center;
-    }
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .btn-section .play,
-    .btn-section .learnMore {
-        width: 35%;
-        margin: 10px;
-    }
+.footer-bottom p {
+    color: #ffff;
+}
 
-    .btn-section .text {
-        font-size: 14px;
-    }
+.social-media a img {
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
+    transition: 0.5s;
+}
 
-    .btn-section svg {
-        width: 15px;
-        height: 15px;
-    }
-
-    .footer a,
-    .footer p {
-        font-size: 14px;
-    }
+.social-media a:hover img {
+    transform: scale(1.25);
 }
