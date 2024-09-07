@@ -59,7 +59,7 @@ body {
     padding: 10px;
 }
 
-.nav-bar-horizontal a,
+.nav-bar-horizontal .nav-bar-container a,
 .nav-bar-horizontal .hamburger {
     color: #ffff;
     text-align: center;
@@ -79,18 +79,18 @@ body {
     display: none;
 }
 
-.nav-bar-horizontal a:hover,
+.nav-bar-horizontal .nav-bar-container a:hover,
 .nav-bar-horizontal .hamburger:hover {
     background-color: #d438fb;
 }
 
-.nav-bar-horizontal a.active,
+.nav-bar-horizontal .nav-bar-container a.active,
 .nav-bar-vertical a.active {
     background-color: #ffff;
     color: #eb48d3;
 }
 
-.nav-bar-horizontal a.active:hover,
+.nav-bar-horizontal .nav-bar-container a.active:hover,
 .nav-bar-vertical a.active:hover {
     background-color: #e2e2e2;
 }
