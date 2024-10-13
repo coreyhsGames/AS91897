@@ -1,0 +1,339 @@
+/* This file will be used for all of the pages as it will be the essential styles. */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ec45cf;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d340bb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffff;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.hide {
+    display: none !important;
+}
+
+.nav-bar-horizontal {
+    position: relative;
+    display: flex;
+    background-color: #e416b8;
+    overflow: hidden;
+    align-items: center;
+    z-index: 1;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.nav-bar-horizontal .nav-bar-container a,
+.nav-bar-horizontal .hamburger {
+    color: #ffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease;
+    margin: 0 10px;
+    border-radius: 0.77vh;
+    cursor: pointer;
+    background-color: #cc00fd;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar-horizontal .hamburger {
+    font-size: 2rem;
+    display: none;
+    /* Initially hidden */
+}
+
+.nav-bar-horizontal .nav-bar-container a:hover,
+.nav-bar-horizontal .hamburger:hover {
+    background-color: #d438fb;
+}
+
+.nav-bar-horizontal .nav-bar-container a.active,
+.nav-bar-vertical a.active {
+    background-color: #ffff;
+    color: #eb48d3;
+}
+
+.nav-bar-horizontal .nav-bar-container a.active:hover,
+.nav-bar-vertical a.active:hover {
+    background-color: #e2e2e2;
+}
+
+.logo {
+    width: 200px;
+    height: 110px;
+    margin: 5px 20px;
+    background-color: #ffff;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.logo-2 {
+    width: 250px;
+    height: 138px;
+    margin: 5px 20px;
+    background-color: #ffff;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.nav-bar-vertical {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #e416b8;
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    padding-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar-vertical a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffff;
+    display: block;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #cc00fd;
+    margin: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar-vertical a:hover {
+    background-color: #d438fb;
+}
+
+.nav-bar-vertical .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    margin: 10px;
+    padding: 14px;
+}
+
+.footer {
+    background-color: #e624b3;
+    padding: 50px;
+}
+
+.footer-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-main {
+    color: #ffff;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease;
+    margin: 0 10px;
+    border-radius: 0.77vh;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #c907fb;
+    margin-bottom: 10px;
+}
+
+.footer-sub {
+    color: #e544c7;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: background-color 0.5s ease;
+    margin: 0 10px;
+    border-radius: 0.77vh;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffff;
+    margin-bottom: 8px;
+}
+
+.footer-main:hover {
+    background-color: #d438fb;
+}
+
+.footer-sub:hover {
+    background-color: #e2e2e2;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    color: #ffff;
+}
+
+.social-media a img {
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
+    transition: 0.5s;
+}
+
+.social-media a:hover img {
+    transform: scale(1.25);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffff;
+    background-color: #e416b8;
+    padding: 10px;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-section {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.important-txt {
+    color: #de5dc3 !important;
+    font-weight: bold !important;
+}
+
+.footer-container {
+    margin-right: 25px;
+    display: flex;
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.category {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .nav-bar-horizontal {
+        justify-content: space-between;
+    }
+
+    .nav-bar-horizontal .nav-bar-container a {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .nav-bar-horizontal .hamburger {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    .nav-bar-horizontal .nav-bar-container a {
+        display: none;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-main,
+    .footer-sub {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 730px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-main,
+    .footer-sub {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .logo,
+    .logo-2 {
+        width: 150px; /* Adjust logo size for smaller screens */
+        height: 85px; /* Maintain aspect ratio */
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-btns {
+        margin-top: 10px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+    }
+
+    .social-media a img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .nav-bar-horizontal .nav-bar-container a {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}

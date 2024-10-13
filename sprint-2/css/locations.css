@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    margin: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    border: 3px solid #D322DD;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0;
+    color: #444;
+}
+
+.card p {
+    margin: 0;
+    color: #D322DD;
+    padding: 5px 10px;
+}
+
+.card .hours {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background-color: #c907fb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.card button:hover {
+    background-color: #d438fb;
+}
+
+h2 {
+    background-color: #ffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 0.77vh;
+    margin: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.map {
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  height: auto;
+  max-width: 1400px; /* Ensure the image doesn't exceed the container width */
+}
+
+/* Responsive Styles */
+@media (max-width: 1300px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
