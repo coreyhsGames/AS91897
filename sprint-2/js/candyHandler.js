@@ -60,6 +60,7 @@ async function loadCandySection(section, filters = null) {
                 candyView.querySelector('.container .candy-name').innerText = `${candy.name} (${candy.quantity}g)`;
                 candyView.querySelector('.container .candy-price').innerText = `$${candy.price}`;
                 candyView.querySelector('.container .candy-img').src = candy.img;
+                candyView.querySelector('.container .candy-img').alt = `${candy.name} (${candy.quantity}g)`;
                 candyView.querySelector('.container .candy-sold').innerText = `${candy.sold} Sold`;
                 candyView.querySelector('.container .candy-description').innerHTML = candy.description;
 
