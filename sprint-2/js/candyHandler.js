@@ -42,6 +42,7 @@ async function loadCandySection(section, filters = null) {
             element.querySelector('.card-info .candy-name').innerText = `${candy.name} (${candy.quantity}g)`;
             element.querySelector('.card-info .price').innerText = `$${candy.price}`;
             element.querySelector('.candy-img').src = candy.img;
+            element.querySelector('.candy-img').alt = `${candy.name} (${candy.quantity}g)`;
             element.querySelector('.card-info .num-sold').innerText = `${candy.sold} Sold`;
 
             // Star rating
