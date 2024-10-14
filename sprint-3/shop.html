@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8">
+
+    <!-- Sets the viewport to ensure proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links to external CSS files for styling the webpage -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/candyMenu.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+
+    <!-- Adds a favicon for the website -->
+    <link rel="shortcut icon" href="./images/retrocandy_favicon.png" type="image/x-icon">
+
+    <!-- Links to external JavaScript files, deferring execution until the page has loaded -->
+    <script src="./js/starRating.js" defer></script>
+    <script src="./js/candyHandler.js" defer></script>
+
+    <!-- Sets the title of the webpage -->
+    <title>Shop - Retro Candy</title>
+</head>
+
+<body>
+    <!-- Horizontal navigation bar -->
+    <div class="nav-bar-horizontal">
+        <!-- Logo linking to the home page -->
+        <a href="index.html"><img src="images/retrocandy_logo.png" class="logo" alt="Retro Candy Logo"></a>
+        <div class="nav-bar-container" style="margin-right: 25px;">
+            <!-- Navigation links for the main sections of the website -->
+            <a href="index.html">Home</a>
+            <a href="#" class="active">Shop</a>
+            <a href="locations.html">Locations</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+        <!-- Hamburger menu icon for mobile navigation -->
+        <span id="hamburger" class="hamburger">&#9776;</span>
+    </div>
+
+    <!-- Vertical navigation bar for mobile screens -->
+    <div id="vertical-nav-bar" class="nav-bar-vertical">
+        <!-- Close button for the vertical navigation bar -->
+        <a href="javascript:void(0)" id="close-btn" class="close-btn">X</a>
+
+        <!-- Navigation links for the vertical navigation bar -->
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#" id="vertical-about-btn">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <!-- Main section of the webpage -->
+    <div class="main-section">
+        <!-- Main heading for the webpage -->
+        <h1>SHOP</h1>
+        <br>
+        <h1>SHOP BY CATEGORY</h1>
+        <br>
+        <div class="shop-categories">
+            <a href="#best-sellers">
+                <img src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                    alt="Gummy Bears">
+                <p>Best Sellers</p>
+            </a>
+            <a href="#new-arrivals">
+                <img src="./images/candy/m-and-m-1308539_1280.jpg" alt="Chocolate Coated Peanuts">
+                <p>New Arrivals</p>
+            </a>
+            <a href="#nz-candy">
+                <img src="./images/flags/kerin-gedge-ZBP7JXbg0AY-unsplash.jpg" alt="New Zealand Flag">
+                <p>NZ/AU Candy</p>
+            </a>
+            <a href="#us-candy">
+                <img src="./images/flags/chris-robert-1MkR9ehe9Fg-unsplash.jpg" alt="United States of America Flag">
+                <p>US Candy</p>
+            </a>
+            <a href="#uk-candy">
+                <img src="./images/flags/chris-lawton-QPOaQ2Kp80c-unsplash.jpg" alt="United Kingdom Flag">
+                <p>UK Candy</p>
+            </a>
+        </div>
+        <br>
+        <br><br><br>
+        <div class="shop">
+            <!-- Container for the shop section -->
+            <div class="category">
+                <!-- Category section -->
+                <div class="header" id="best-sellers">
+                    <h3>BEST SELLERS</h3>
+                </div>
+                <br>
+                <div class="carousel-container">
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="category">
+                <div class="header" id="new-arrivals">
+                    <h3>NEW ARRIVALS</h3>
+                </div>
+                <br>
+                <div class="carousel-container">
+                    <!-- Container for the carousel -->
+                    <button class="carousel-prev">&#10094;</button>
+                    <!-- Button to navigate to the previous item in the carousel -->
+                    <button class="carousel-next">&#10095;</button>
+                    <!-- Button to navigate to the next item in the carousel -->
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="category">
+                <div class="header" id="nz-candy">
+                    <h3>NEW ZEALAND/AUSTRALIAN CANDY</h3>
+                </div>
+                <br>
+                <div class="carousel-container">
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="category">
+                <div class="header" id="us-candy">
+                    <h3>US CANDY</h3>
+                </div>
+                <br>
+                <div class="carousel-container">
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="category">
+                <div class="header" id="uk-candy">
+                    <h3>UK CANDY</h3>
+                </div>
+                <br>
+                <div class="carousel-container">
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img class="candy-img"
+                                    src="./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg"
+                                    alt="Gummy Bears (150g)">
+                                <div class="card-info">
+                                    <h4 class="candy-name">Gummy Bears (150g)</h4>
+                                    <p class="important-txt price">$4.99</p>
+                                    <div class="stats">
+                                        <form class="rating">
+                                            <label>
+                                                <input type="radio" name="stars" value="4" />
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                                <span class="icon">★</span>
+                                            </label>
+                                        </form>
+                                        <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                                        <p class="num-sold">0 Sold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="footer">
+        <!-- Container for footer -->
+        <div style="display: flex; justify-content: center;">
+            <a href="index.html" style="height: fit-content;"><img src="./images/retrocandy_logo.png" class="logo-2"
+                    alt="Retro Candy Logo"></a>
+            <!-- Logo -->
+            <div class="footer-container">
+                <!-- Container for footer buttons -->
+                <div class="footer-btns">
+                    <a href="shop.html" class="footer-main">Shop</a>
+                    <a href="shop.html#best-sellers" class="footer-sub">Best Sellers</a>
+                    <a href="shop.html#new-arrivals" class="footer-sub">New Arrivals</a>
+                    <a href="shop.html#nz-candy" class="footer-sub">NZ/AU Candy</a>
+                    <a href="shop.html#us-candy" class="footer-sub">US Candy</a>
+                    <a href="shop.html#uk-candy" class="footer-sub">UK Candy</a>
+                </div>
+                <div class="footer-btns">
+                    <a href="locations.html" class="footer-main">Locations</a>
+                    <a href="locations.html#map" class="footer-sub">Map</a>
+                </div>
+                <div class="footer-btns">
+                    <a href="contact.html" class="footer-main">Contact</a>
+                    <a href="contact.html#msg-us" class="footer-sub">Message Us</a>
+                </div>
+                <div class="footer-btns">
+                    <a href="about.html" class="footer-main">About Us</a>
+                    <a href="about.html#our-promise" class="footer-sub">Our Promise</a>
+                    <a href="about.html#history" class="footer-sub">History</a>
+                    <a href="about.html#our-staff" class="footer-sub">Our Staff</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <hr>
+        <br>
+        <div class="footer-bottom">
+            <!-- Container for social links -->
+            <p>© 2024 Retro Candy, Inc.</p>
+            <div class="social-media">
+                <a href="https://x.com/"><img src="./images/svg/icons8-twitter.svg" alt="Twitter"></a>
+                <a href="https://facebook.com/"><img src="./images/svg/icons8-facebook.svg" alt="Facebook"></a>
+                <a href="https://youtube.com/"><img src="./images/svg/icons8-youtube.svg" alt="YouTube"></a>
+                <a href="https://instagram.com/"><img src="./images/svg/icons8-instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="candy-view hide">
+        <!-- Viewing candy information -->
+        <div class="candy-menu">
+            <div class="container">
+                <img class="candy-img">
+                <div class="candy-info">
+                    <div class="candy-name">Candy Name</div>
+                    <div class="candy-stats">
+                        <form class="candy-rating rating">
+                            <label>
+                                <input type="radio" name="stars" value="0" />
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                                <span class="icon">★</span>
+                            </label>
+                        </form>
+                        <div class="candy-sold">Num Sold</div>
+                    </div>
+                    <div class="candy-description">Lorem ipsum odor amet, consectetuer adipiscing elit. Mus orci fames
+                        placerat lobortis sagittis eget feugiat. Sed mauris erat eu senectus gravida.</div>
+                    <div class="divider"></div>
+                    <div class="purchase-info">
+                        <div class="candy-price">Price</div>
+                        <div class="candy-cart">Add To Cart</div>
+                    </div>
+                </div>
+            </div>
+            <a class="close-btn">
+                <p>X</p>
+            </a>
+            <!-- Closing candy information -->
+        </div>
+    </div>
+</body>
+<script>
+    // Loads all the candy when the page loads
+    window.onload = function () {
+        loadCandySection(document.querySelector("#best-sellers").parentElement, ['best-sellers']);
+        loadCandySection(document.querySelector("#new-arrivals").parentElement, ['new']);
+        loadCandySection(document.querySelector("#nz-candy").parentElement, ['nz']);
+        loadCandySection(document.querySelector("#us-candy").parentElement, ['us']);
+        loadCandySection(document.querySelector("#uk-candy").parentElement, ['uk']);
+    }
+
+    // Vertical navigation bar
+    const verticalNavBar = document.getElementById('vertical-nav-bar');
+
+    const hamburger = document.getElementById('hamburger');
+    const closeBtn = document.getElementById('close-btn');
+
+    const vertAboutBtn = document.getElementById('vertical-about-btn');
+
+    hamburger.addEventListener('click', function () {
+        verticalNavBar.style.width = "100%";
+    });
+
+    closeBtn.addEventListener('click', function () {
+        verticalNavBar.style.width = "0%";
+    });
+
+    vertAboutBtn.addEventListener('click', function () {
+        verticalNavBar.style.width = "0%";
+    })
+
+    // Shop Categories
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousels = document.querySelectorAll('.carousel-container');
+
+        carousels.forEach(function (carousel) {
+            const prevBtn = carousel.querySelector('.carousel-prev');
+            const nextBtn = carousel.querySelector('.carousel-next');
+            const itemsContainer = carousel.querySelector('.carousel');
+            const items = carousel.querySelectorAll('.carousel-item');
+            let currentIndex = 0;
+            const visibleItems = getVisibleItems();
+
+            // Adjust the number of items based on screen size
+            function moveCarousel(direction) {
+                const totalItems = items.length;
+                if (direction === 'next') {
+                    currentIndex = (currentIndex + 1) % (totalItems - visibleItems + 1);
+                } else if (direction === 'prev') {
+                    currentIndex = (currentIndex - 1 + totalItems) % (totalItems - visibleItems + 1);
+                }
+                updateCarousel();
+            }
+
+            // Update carousel based on the current index
+            function updateCarousel() {
+                const moveTo = -(100 / visibleItems) * currentIndex;
+                itemsContainer.style.transform = `translateX(${moveTo}%)`;
+            }
+
+            // Determine how many items should be visible based on screen size
+            function getVisibleItems() {
+                const width = window.innerWidth;
+                if (width < 768) return 1; // For mobile
+                if (width < 1024) return 2; // For tablets
+                if (width < 1200) return 3; // For small screens
+                return 4; // For large screens
+            }
+
+            // Event listeners for prev and next buttons
+            prevBtn.addEventListener('click', function () {
+                moveCarousel('prev');
+            });
+
+            nextBtn.addEventListener('click', function () {
+                moveCarousel('next');
+            });
+
+            // Initialize the carousel on load
+            updateCarousel();
+
+            // Recalculate the visible items on resize
+            window.addEventListener('resize', function () {
+                updateCarousel();
+            });
+        });
+    });
+</script>
+
+</html>

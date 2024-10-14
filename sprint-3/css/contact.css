@@ -1,0 +1,217 @@
+.contact-container {
+    /* Main container for the contact section, centered with padding and border radius. */
+    text-align: center;
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contact-wrapper {
+    /* Flex container for the form and info sections, spaced evenly. */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-form, .contact-info {
+    /* Styles for the contact form and info sections, including background and border. */
+    background-color: #ffffff;
+    border: 4px solid #b93aaa;
+    border-radius: 10px;
+    padding: 10px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    /* Centering the heading in the contact form. */
+    align-self: center;
+}
+
+.contact-info h2 {
+    /* Aligning the heading in the contact info section to the start. */
+    align-self: flex-start;
+    margin: 0;
+}
+
+.contact-form h2, .contact-info h2 {
+    /* Common styles for both headings, including background, color, and shadow. */
+    background-color: #ff00c0;
+    color: white;
+    padding: 10px;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.contact-form form {
+    /* Flex container for form elements, stacked vertically. */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    /* Styles for labels in the contact form, with left alignment. */
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.contact-form input, .contact-form textarea {
+    /* Common styles for input fields and text areas in the form. */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.875rem;
+}
+
+.contact-form textarea {
+    /* Specific height for the text area, preventing resizing. */
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    /* Styles for the submit button, including padding and background color. */
+    padding: 10px;
+    background-color: #ff00c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form button:hover {
+    /* Hover effect for the submit button. */
+    background-color: #d400a8;
+}
+
+.info-buttons {
+    /* Flex container for additional info buttons, spaced vertically. */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.info-buttons a {
+    /* Styles for info buttons, including background, text color, and padding. */
+    background-color: #ff00c0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0.77vh;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.info-buttons a:hover {
+    /* Hover effect for info buttons. */
+    background-color: #d400a8;
+}
+
+.info-buttons a img {
+    /* Padding for images within info buttons. */
+    padding-right: 10px;
+}
+
+.extra-info {
+    /* Flex container for additional info, stacked vertically. */
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-info p {
+    /* Styles for paragraphs in extra info, with bottom margin. */
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+h2 {
+    /* General styles for h2 elements, including background and padding. */
+    background-color: #ffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 0.77vh;
+    margin: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.required-field {
+    /* Styles for indicating required fields. */
+    color: red;
+}
+
+/* Responsive Styles */
+
+/* Tablet - adjust layout for screen widths less than 768px */
+@media (max-width: 768px) {
+    .contact-container {
+        /* Adjusting the width for tablet devices. */
+        width: 75%;
+    }
+
+    .contact-wrapper {
+        /* Changing flex direction for smaller screens. */
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-info {
+        /* Full width for both sections on smaller screens. */
+        width: 100%;
+    }
+
+    .info-buttons a {
+        /* Adjusting font size for info buttons on tablet. */
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile - adjust layout for screen widths less than 480px */
+@media (max-width: 480px) {
+    .contact-container {
+        /* Further adjusting the width for mobile devices. */
+        width: 90%;
+    }
+
+    .contact-wrapper {
+        /* Ensuring vertical stacking on mobile. */
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-info {
+        /* Full width for both sections on mobile. */
+        width: 100%;
+    }
+
+    .contact-form h2, .contact-info h2 {
+        /* Reducing font size for headings on mobile. */
+        font-size: 1.25rem;
+    }
+
+    .info-buttons a {
+        /* Adjusting font size and padding for buttons on mobile. */
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        /* Reducing font size for input fields on mobile. */
+        font-size: 0.75rem;
+    }
+}

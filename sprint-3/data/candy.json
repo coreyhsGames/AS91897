@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Gummy Bears",
+        "quantity": 150,
+        "price": 4.99,
+        "sold": 275,
+        "rating": 4,
+        "img": "./images/candy/food-gummi-candy-gummy-bear-candy-jelly-babies-confectionery-1613867-pxhere.com.jpg",
+        "description": "Chewy, gelatin-based lollies shaped like little bears, available in a range of fruity flavours and colours, often loved for their soft texture and nostalgic appeal.",
+        "tags": "us"
+    },
+    {
+        "name": "Gummy Worms",
+        "quantity": 150,
+        "price": 5.99,
+        "sold": 859,
+        "rating": 4,
+        "img": "./images/candy/gummy-worm-candy-close-up.jpg",
+        "description": "Long, squishy lollies resembling worms, typically two-toned and packed with fruity flavours. They're a favourite for both kids and adults, often used as a playful topping for desserts.",
+        "tags": "us"
+    },
+    {
+        "name": "Jelly Beans",
+        "quantity": 150,
+        "price": 4.99,
+        "sold": 152,
+        "rating": 3,
+        "img": "./images/candy/jelly_beans_candy_sugar_sweets_green_purple_red_sweet-646358.jpg",
+        "description": "Small, bean-shaped lollies with a hard outer shell and a soft, chewy centre, available in a wide range of flavours, from classic fruit to unique concoctions.",
+        "tags": "us"
+    },
+    {
+        "name": "Wine Gums",
+        "quantity": 150,
+        "price": 4.99,
+        "sold": 828,
+        "rating": 5,
+        "img": "./images/candy/candy-wine-gums-sweets-background.jpg",
+        "description": "Chewy, fruit-flavoured lollies that aren't made with wine, but often have a sophisticated taste. They come in various shapes and are known for their firm texture.",
+        "tags": "uk"
+    },
+    {
+        "name": "Chocolate Coated Peanuts",
+        "quantity": 150,
+        "price": 5.99,
+        "sold": 54,
+        "rating": 3,
+        "img": "./images/candy/m-and-m-1308539_1280.jpg",
+        "description": "Crunchy roasted peanuts covered in a smooth layer of rich chocolate, offering a delightful combination of sweet and nutty flavours in every bite.",
+        "tags": "new,us"
+    },
+    {
+        "name": "Fruit Flavoured Candy",
+        "quantity": 150,
+        "price": 5.99,
+        "sold": 29,
+        "rating": 4,
+        "img": "./images/candy/(Skittles)_a_handful.JPG",
+        "description": "Lollies burst with vibrant fruit flavours, often made with real fruit juices.",
+        "tags": "new,us"
+    },
+    {
+        "name": "Sour Rainbow Strips",
+        "quantity": 150,
+        "price": 6.99,
+        "sold": 70,
+        "rating": 3,
+        "img": "./images/candy/6880940711_2353cb3a12_k.jpg",
+        "description": "Long, chewy strips of candy coated in sour sugar, featuring a rainbow of fruity flavours. Their tartness makes them a popular choice for those who love a tangy treat.",
+        "tags": "new,us"
+    },
+    {
+        "name": "Gummy Snakes",
+        "quantity": 150,
+        "price": 4.99,
+        "sold": 150,
+        "rating": 2,
+        "img": "./images/candy/5593339772_4c66a187a5_k.jpg",
+        "description": "Similar to gummy worms but in a slithery snake shape, these lollies are soft and chewy, available in multiple fruity flavours and often bright colours, making them fun and appealing.",
+        "tags": "new,uk"
+    },
+    {
+        "name": "Jelly Tots",
+        "quantity": 150,
+        "price": 5.99,
+        "sold": 113,
+        "rating": 4,
+        "img": "./images/candy/1280px-Jelly_tots.jpg",
+        "description": "Jelly Tots are chewy, bite-sized jelly sweets coated in sugar, bursting with fruity flavours. Perfect for snacking!",
+        "tags": "uk"
+    },
+    {
+        "name": "Jelly Babies",
+        "quantity": 150,
+        "price": 4.99,
+        "sold": 94,
+        "rating": 3,
+        "img": "./images/candy/Maynard_Bassetts_jelly_babies_30_June_2022_(2).jpg",
+        "description": "Soft, adorable sweets in various fruity flavours, dusted with icing sugar. A nostalgic British favourite!",
+        "tags": "uk"
+    },
+    {
+        "name": "Jaffas",
+        "quantity": 150,
+        "price": 3.99,
+        "sold": 165,
+        "rating": 4,
+        "img": "./images/candy/Jaffa_lollies.jpg",
+        "description": "Chocolate-covered orange sweets with a crunchy shell. A classic movie snack, known for their zesty flavour!",
+        "tags": "nz"
+    },
+    {
+        "name": "Pineapple Lumps",
+        "quantity": 150,
+        "price": 4.99,
+        "sold": 32,
+        "rating": 2,
+        "img": "./images/candy/delicious-famous-lollies-pineapple-lumps-260nw-1426043528.jpg",
+        "description": "Chewy pineapple centres with rich chocolate coating. A sweet and tangy Kiwi classic!",
+        "tags": "nz"
+    },
+    {
+        "name": "Licorice Spirals (12)",
+        "quantity": 180,
+        "price": 17.99,
+        "sold": 140,
+        "rating": 4,
+        "img": "./images/candy/12_liquorice_spirals.png",
+        "description": "Chewy, spiral-shaped treats with a rich, aromatic licorice flavour. A timeless favourite for licorice lovers!",
+        "tags": "nz"
+    },
+    {
+        "name": "Citrus Candy",
+        "quantity": 150,
+        "price": 5.99,
+        "sold": 203,
+        "rating": 4,
+        "img": "./images/candy/candy-fruit-jelly-citrus-fruits-over-sugared.jpg",
+        "description": "Soft candy bursting with zesty lemon, lime, and orange flavours. Refreshing and tangy for a quick treat!",
+        "tags": "nz"
+    }
+]

@@ -1,0 +1,133 @@
+.carousel-container {
+    /* Main container for the carousel, with maximum width and shadow effect. */
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #c439ac;
+    overflow: hidden;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    /* Flex container for carousel items with smooth transition effects. */
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    /* Each item in the carousel, set to take full width. */
+    flex: 1 0 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item .card {
+    /* Margin for each card within carousel items for spacing. */
+    margin: 10px;
+}
+
+.carousel-item img {
+    /* Styles for images within carousel items, maintaining aspect ratio. */
+    width: 100%;
+    height: 250px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images cover the space while maintaining aspect ratio */
+    border-radius: 0.77vh;
+}
+
+/* Navigation buttons */
+.carousel-prev,
+.carousel-next {
+    /* Styles for navigation buttons, positioned centrally on the sides. */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e416b8;
+    color: #ffff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1;
+    transition: 0.5s;
+    border: #ffff solid;
+    border-radius: 0.77vh;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    /* Hover effect for navigation buttons. */
+    background-color: #c1129b;
+}
+
+.carousel-prev {
+    /* Positioning for the previous button. */
+    left: 10px;
+}
+
+.carousel-next {
+    /* Positioning for the next button. */
+    right: 10px;
+}
+
+/* Responsive rules */
+@media (min-width: 768px) {
+    /* Adjusts carousel item width for tablet screens. */
+    .carousel-item {
+        flex: 1 0 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Adjusts carousel item width for medium screens. */
+    .carousel-item {
+        flex: 1 0 33.33%;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Adjusts carousel item width for larger screens. */
+    .carousel-item {
+        flex: 1 0 25%;
+    }
+}
+
+.card {
+    /* Styles for individual cards, including background and shadow effects. */
+    background-color: #ffff;
+    margin: 10px;
+    border-radius: 0.77vh;
+    transition: 0.5s;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.shop .category .card:hover {
+    /* Hover effect for cards in the shop category, scaling effect. */
+    transform: scale(1.05);
+}
+
+.shop .category .card .card-info {
+    /* Styles for card info section, including padding and text color. */
+    padding: 10px;
+    color: #000;
+    word-wrap: break-word;
+    width: 250px;
+}
+
+.shop .category .card .card-info h4 {
+    /* Styles for headings in card info. */
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: inherit;
+}
+
+.shop .category .card .card-info p {
+    /* Styles for paragraphs in card info. */
+    font-size: 1.125rem;
+    color: #525252;
+    margin-top: auto;
+}
+
+.stats {
+    /* Flex container for stats section, centering items. */
+    display: flex;
+    align-items: center;
+}

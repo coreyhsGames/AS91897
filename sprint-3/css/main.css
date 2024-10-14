@@ -1,0 +1,390 @@
+/* This file will be used for all of the pages as it will be the essential styles. */
+
+* {
+    /* Reset default margin and padding for all elements */
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    /* Custom scrollbar width */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* Styling for the scrollbar track */
+    box-shadow: inset 0 0 1px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Styling for the scrollbar thumb */
+    background: #ec45cf;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* Change thumb color on hover */
+    background: #d340bb;
+}
+
+html {
+    /* Smooth scrolling behavior for the entire document */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Body styling with background and font */
+    background: #ffff;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.hide {
+    /* Utility class to hide elements */
+    display: none !important;
+}
+
+.nav-bar-horizontal {
+    /* Horizontal navigation bar styling */
+    position: relative;
+    display: flex;
+    background-color: #e416b8;
+    overflow: hidden;
+    align-items: center;
+    z-index: 1;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.nav-bar-horizontal .nav-bar-container a,
+.nav-bar-horizontal .hamburger {
+    /* Link and hamburger button styling within horizontal nav */
+    color: #ffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease;
+    margin: 0 10px;
+    border-radius: 0.77vh;
+    cursor: pointer;
+    background-color: #cc00fd;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar-horizontal .hamburger {
+    /* Specific styling for the hamburger menu */
+    font-size: 2rem;
+    display: none; /* Initially hidden */
+}
+
+.nav-bar-horizontal .nav-bar-container a:hover,
+.nav-bar-horizontal .hamburger:hover {
+    /* Change background color on hover for links and hamburger */
+    background-color: #d438fb;
+}
+
+.nav-bar-horizontal .nav-bar-container a.active,
+.nav-bar-vertical a.active {
+    /* Active link styling for navigation */
+    background-color: #ffff;
+    color: #eb48d3;
+}
+
+.nav-bar-horizontal .nav-bar-container a.active:hover,
+.nav-bar-vertical a.active:hover {
+    /* Hover styling for active links */
+    background-color: #e2e2e2;
+}
+
+.logo {
+    /* Styling for logo image */
+    width: 200px;
+    height: 110px;
+    margin: 5px 20px;
+    background-color: #ffff;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.logo-2 {
+    /* Additional logo styling for a different size */
+    width: 250px;
+    height: 138px;
+    margin: 5px 20px;
+    background-color: #ffff;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.nav-bar-vertical {
+    /* Vertical navigation bar styling */
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #e416b8;
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    padding-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar-vertical a {
+    /* Link styling for vertical navigation */
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffff;
+    display: block;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #cc00fd;
+    margin: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar-vertical a:hover {
+    /* Hover effect for vertical nav links */
+    background-color: #d438fb;
+}
+
+.nav-bar-vertical .close-btn {
+    /* Close button styling for vertical nav */
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    margin: 10px;
+    padding: 14px;
+}
+
+.footer {
+    /* Footer background and padding */
+    background-color: #e624b3;
+    padding: 50px;
+}
+
+.footer-btns {
+    /* Container for footer buttons with column layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-main {
+    /* Main footer button styling */
+    color: #ffff;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease;
+    margin: 0 10px;
+    border-radius: 0.77vh;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #c907fb;
+    margin-bottom: 10px;
+}
+
+.footer-sub {
+    /* Sub footer button styling */
+    color: #e544c7;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: background-color 0.5s ease;
+    margin: 0 10px;
+    border-radius: 0.77vh;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffff;
+    margin-bottom: 8px;
+}
+
+.footer-main:hover {
+    /* Hover effect for main footer button */
+    background-color: #d438fb;
+}
+
+.footer-sub:hover {
+    /* Hover effect for sub footer button */
+    background-color: #e2e2e2;
+}
+
+.footer-bottom {
+    /* Flexbox layout for footer bottom content */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    /* Footer bottom paragraph styling */
+    color: #ffff;
+}
+
+.social-media a img {
+    /* Styling for social media icons with drop shadow */
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
+    transition: 0.5s;
+}
+
+.social-media a:hover img {
+    /* Scale effect on hover for social media icons */
+    transform: scale(1.25);
+}
+
+h1 {
+    /* Main heading styling */
+    font-size: 3rem;
+    color: #ffff;
+    background-color: #e416b8;
+    padding: 10px;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-section {
+    /* Flexbox layout for main section */
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.important-txt {
+    /* Highlighted important text styling */
+    color: #de5dc3 !important;
+    font-weight: bold !important;
+}
+
+.footer-container {
+    /* Flexbox layout for footer container */
+    margin-right: 25px;
+    display: flex;
+}
+
+.shop {
+    /* Flexbox layout for shop section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.category {
+    /* Relative positioning for category section */
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .nav-bar-horizontal {
+        /* Adjust horizontal nav for smaller screens */
+        justify-content: space-between;
+    }
+
+    .nav-bar-horizontal .nav-bar-container a {
+        /* Font size and padding adjustments for nav links */
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .nav-bar-horizontal .hamburger {
+        /* Show hamburger menu on smaller screens */
+        display: block; 
+    }
+
+    .nav-bar-horizontal .nav-bar-container a {
+        /* Hide regular nav links on smaller screens */
+        display: none;
+    }
+
+    .footer {
+        /* Reduce footer padding for smaller screens */
+        padding: 30px;
+    }
+
+    .footer-main,
+    .footer-sub {
+        /* Font size and padding adjustments for footer buttons */
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    h1 {
+        /* Font size adjustment for heading on smaller screens */
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 730px) {
+    .footer {
+        /* Further reduce footer padding */
+        padding: 20px;
+    }
+
+    .footer-main,
+    .footer-sub {
+        /* Smaller font size and padding for footer buttons */
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .logo,
+    .logo-2 {
+        /* Adjust logo size for smaller screens */
+        width: 150px; 
+        height: 85px; 
+    }
+
+    .footer-container {
+        /* Change footer container layout for smaller screens */
+        flex-direction: column;
+    }
+
+    .footer-btns {
+        /* Margin adjustment for footer buttons */
+        margin-top: 10px;
+    }
+
+    .footer-bottom p {
+        /* Font size adjustment for footer bottom text */
+        font-size: 0.75rem;
+    }
+
+    .social-media a img {
+        /* Size adjustment for social media icons */
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        /* Further font size adjustment for heading on very small screens */
+        font-size: 2rem;
+    }
+
+    .nav-bar-horizontal .nav-bar-container a {
+        /* Font size and padding adjustments for nav links on very small screens */
+        font-size: 1rem;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Albany",
+        "address": "4 Appian Way, Albany, Auckland 0632",
+        "hours": "Weekdays: 7am - 3pm<br>Weekends: 8am - 3:30pm",
+        "image": "./images/locations/North_Harbour_Stadium_seen_from_Albany_Lakes_Civic_Park.jpg"
+    },
+    {
+        "name": "Orewa",
+        "address": "376 Hibiscus Coast Highway, Orewa, Auckland 0931",
+        "hours": "Weekdays: 7am - 3pm<br>Weekends: 8am - 3:30pm",
+        "image": "./images/locations/Orewa_morning.jpg"
+    },
+    {
+        "name": "Warkworth",
+        "address": "2/1 Fairwater Road, Warkworth 0910",
+        "hours": "Weekdays: 7am - 3pm<br>Weekends: 8am - 3:30pm",
+        "image": "./images/locations/1280px-Warkworth_(1338556365).jpg"
+    },
+    {
+        "name": "Newmarket",
+        "address": "63 Davis Crescent, Newmarket, Auckland 1023",
+        "hours": "Weekdays: 7am - 3pm<br>Weekends: 8am - 3:30pm",
+        "image": "./images/locations/1280px-Broadway_In_Newmarket.jpg"
+    },
+    {
+        "name": "Avondale",
+        "address": "1864 Great North Road, Avondale, Auckland 0618",
+        "hours": "Weekdays: 7am - 3pm<br>Weekends: 8am - 3:30pm",
+        "image": "./images/locations/Avondale_Heights.jpg"
+    }
+]

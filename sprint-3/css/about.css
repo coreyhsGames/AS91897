@@ -1,0 +1,205 @@
+.about-container {
+    /* Main container for the "about" section, using flexbox for layout and centering. */
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    /* Targets all <h1> elements, applying styles for font size, color, and background. */
+    font-size: 3rem;
+    color: #ffff;
+    background-color: #e416b8;
+    padding: 10px;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-section {
+    /* Section specifically for "about" content, ensuring it uses flexbox for alignment. */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 75%;
+}
+
+.about-box {
+    /* Individual boxes within the "about" section for structured layout. */
+    width: 48%;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.about-box h2 {
+    /* Targets <h2> elements within .about-box, applying distinct styles for headings. */
+    background-color: #ff00c0;
+    color: white;
+    padding: 10px;
+    border-radius: 0.77vh;
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-box p {
+    /* Styles for <p> elements within .about-box for consistent padding and font styling. */
+    padding: 20px;
+    font-size: 1.25rem;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    border-radius: 0.77vh;
+}
+
+.about-image {
+    /* Targets the image container in the "about" section for layout. */
+    width: 48%;
+}
+
+.about-image img {
+    /* Targets images within .about-image, ensuring they scale responsively. */
+    width: 100%;
+    border-radius: 0.77vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.staff-heading {
+    /* Targets the heading for the staff section, applying background and text styles. */
+    background-color: #ff00c0;
+    color: white;
+    padding: 10px;
+    margin: 40px 0 20px;
+    border-radius: 0.77vh;
+    font-size: 2rem;
+}
+
+.staff-grid {
+    /* Targets the grid layout for staff members, defining columns and gaps. */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.staff-member {
+    /* Targets individual staff member boxes, allowing for styling of background and borders. */
+    background-color: #ffffff;
+    border: 2px solid #ff00c0;
+    border-radius: 0.77vh;
+    padding: 10px;
+    text-align: center;
+}
+
+.staff-member img {
+    /* Targets images of staff members, ensuring they have a circular shape and set dimensions. */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.staff-member p {
+    /* Targets <p> elements within each staff member's box, defining font size. */
+    font-size: 0.875rem;
+}
+
+/* Responsive Styles */
+
+/* Large Screen (max-width: 1300px) */
+@media (max-width: 1300px) {
+    /* Adjusts styles for screens smaller than 1300px, modifying widths and layouts. */
+    .about-section {
+        max-width: 90%;
+    }
+
+    .about-box, .about-image {
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .staff-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Tablet (max-width: 900px) */
+@media (max-width: 900px) {
+    /* Modifies styles for tablet-sized screens, making layout more mobile-friendly. */
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box, .about-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .staff-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Adjusts styles for mobile screens, improving text and layout readability. */
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .about-box h2, .staff-heading {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .staff-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Mobile (max-width: 425px) */
+@media (max-width: 425px) {
+    /* Further adjusts styles for very small mobile screens. */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-member img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Very Small Devices (max-width: 350px) */
+@media (max-width: 350px) {
+    /* Final adjustments for the smallest screens to optimize display. */
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
