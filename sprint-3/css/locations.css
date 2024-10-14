@@ -11,7 +11,7 @@
 .card {
     /* Individual card styling with background, shadow, and border */
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.77vh;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     width: 250px;
     overflow: hidden;
