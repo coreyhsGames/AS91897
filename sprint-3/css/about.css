@@ -106,6 +106,7 @@ h1 {
 .staff-member p {
     /* Targets <p> elements within each staff member's box, defining font size. */
     font-size: 0.875rem;
+    font-weight: bold;
 }
 
 /* Responsive Styles */
