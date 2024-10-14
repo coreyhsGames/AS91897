@@ -324,3 +324,26 @@ a.button-2:hover {
     /* Paragraph styles for category links */
     margin-top: 5px;
 }
+
+@media (max-width: 900px) {
+    h1 {
+        /* Further reducing font size for tablets and small screens. */
+        font-size: 1.75rem;
+    }
+
+    p {
+        /* Adjusting paragraph font size for smaller devices. */
+        font-size: 1rem;
+    }
+
+    .shop-categories a img {
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 625px) {
+    .shop-categories {
+        flex-direction: column;
+    }
+}
