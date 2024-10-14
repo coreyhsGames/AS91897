@@ -10,7 +10,7 @@
 .contact-wrapper {
     /* Flex container for the form and info sections, spaced evenly. */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -20,7 +20,6 @@
     border: 4px solid #b93aaa;
     border-radius: 10px;
     padding: 10px;
-    width: 48%;
     display: flex;
     flex-direction: column;
 }
@@ -158,9 +157,12 @@ h2 {
 }
 
 /* Responsive Styles */
-
 /* Tablet - adjust layout for screen widths less than 768px */
 @media (max-width: 768px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+
     .contact-container {
         /* Adjusting the width for tablet devices. */
         width: 75%;
@@ -169,11 +171,7 @@ h2 {
     .contact-wrapper {
         /* Changing flex direction for smaller screens. */
         flex-direction: column;
-    }
-
-    .contact-form, .contact-info {
-        /* Full width for both sections on smaller screens. */
-        width: 100%;
+        justify-content: space-between;
     }
 
     .info-buttons a {
@@ -186,17 +184,7 @@ h2 {
 @media (max-width: 480px) {
     .contact-container {
         /* Further adjusting the width for mobile devices. */
-        width: 90%;
-    }
-
-    .contact-wrapper {
-        /* Ensuring vertical stacking on mobile. */
-        flex-direction: column;
-    }
-
-    .contact-form, .contact-info {
-        /* Full width for both sections on mobile. */
-        width: 100%;
+        width: 70%;
     }
 
     .contact-form h2, .contact-info h2 {
