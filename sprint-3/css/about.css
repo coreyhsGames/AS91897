@@ -75,6 +75,7 @@ h1 {
     margin: 40px 0 20px;
     border-radius: 0.77vh;
     font-size: 2rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .staff-grid {
