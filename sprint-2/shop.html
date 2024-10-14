@@ -49,10 +49,11 @@
         <a href="javascript:void(0)" id="close-btn" class="close-btn">X</a>
 
         <!-- Navigation links for the vertical navigation bar -->
-        <a href="index.html" class="active">Home</a>
-        <a href="#">Link 1</a>
-        <a href="#" id="vertical-about-btn">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="index.html">Home</a>
+        <a href="#" class="active">Shop</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
     </div>
 
     <!-- Main section of the webpage -->
@@ -1134,8 +1135,6 @@
     const hamburger = document.getElementById('hamburger');
     const closeBtn = document.getElementById('close-btn');
 
-    const vertAboutBtn = document.getElementById('vertical-about-btn');
-
     hamburger.addEventListener('click', function () {
         verticalNavBar.style.width = "100%";
     });
@@ -1143,10 +1142,6 @@
     closeBtn.addEventListener('click', function () {
         verticalNavBar.style.width = "0%";
     });
-
-    vertAboutBtn.addEventListener('click', function () {
-        verticalNavBar.style.width = "0%";
-    })
 
     // Shop Categories
     document.addEventListener('DOMContentLoaded', function () {
