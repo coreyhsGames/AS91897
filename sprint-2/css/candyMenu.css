@@ -1,4 +1,5 @@
 .candy-view {
+    /* Main container for the candy view, using flexbox for centering and fixed positioning. */
     display: flex;
     position: fixed;
     width: 100%;
@@ -11,6 +12,7 @@
 }
 
 .candy-menu {
+    /* Styling for the candy menu, including background color, border, and shadow. */
     background-color: #ffff;
     border: 4px solid #c439ac;
     padding: 25px;
@@ -21,6 +23,7 @@
 }
 
 .close-btn {
+    /* Styles for the close button, positioned absolutely within the candy menu. */
     background-color: #e416b8;
     color: #fff;
     display: inline-flex;
@@ -38,16 +41,19 @@
 }
 
 .close-btn p {
+    /* Prevents text selection for <p> inside close button. */
     user-select: none;
 }
 
 .container {
+    /* Flex container for candy image and info, centered in the candy menu. */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container .candy-img {
+    /* Styling for the candy image, ensuring proper sizing and rounding. */
     height: 450px;
     width: 380px;
     object-fit: cover;
@@ -56,12 +62,14 @@
 }
 
 .container .candy-info {
+    /* Flex container for candy information, arranged vertically. */
     display: flex;
     flex-direction: column;
     margin-left: 25px;
 }
 
 .candy-info .candy-cart {
+    /* Styles for the cart button, including background color and text styles. */
     background-color: rgb(50, 230, 50);
     color: #fff;
     text-align: center;
@@ -75,11 +83,13 @@
 }
 
 .candy-info .candy-name {
+    /* Styling for the candy name, emphasizing size and weight. */
     font-size: 2.25rem;
     font-weight: bold;
 }
 
 .candy-info .candy-stats {
+    /* Flex container for displaying stats, spaced evenly. */
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -87,42 +97,48 @@
 }
 
 .candy-info .candy-description {
+    /* Margins for the candy description for spacing. */
     margin-top: 5px;
 }
 
 .divider {
+    /* Styles for the divider line between sections. */
     width: 90%;
     height: 1px;
     background: rgb(200, 200, 200);
-    margin: 10px auto 10px auto;
+    margin: 10px auto;
 }
 
 .candy-info .purchase-info {
+    /* Flex container for purchase info, spaced evenly. */
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
 .candy-info .candy-price {
+    /* Styling for the candy price, emphasizing size and color. */
     font-size: 1.5rem;
     color: #de5dc3;
     font-weight: bold;
 }
 
 .zoomIn {
+    /* Animation class for zoom-in effect. */
     animation: zoomIn 0.5s;
 }
 
 .zoomOut {
+    /* Animation class for zoom-out effect. */
     animation: zoomOut 0.5s;
 }
 
 @keyframes zoomIn {
+    /* Keyframes for zoom-in animation. */
     0% {
         transform: scale(0);
         opacity: 0;
     }
-
     100% {
         transform: scale(1);
         opacity: 1;
@@ -130,11 +146,11 @@
 }
 
 @keyframes zoomOut {
+    /* Keyframes for zoom-out animation. */
     0% {
         transform: scale(1);
         opacity: 1;
     }
-
     100% {
         transform: scale(0);
         opacity: 0;
@@ -145,6 +161,7 @@
 
 /* Tablet - adjust layout for screen widths less than 768px */
 @media (max-width: 768px) {
+    /* Adjusts the layout for tablet-sized screens, stacking elements vertically. */
     .container {
         flex-direction: column;
         align-items: center;
@@ -179,6 +196,7 @@
 
 /* Mobile - adjust layout for screen widths less than 480px */
 @media (max-width: 480px) {
+    /* Adjusts the layout for mobile screens, ensuring proper scaling and readability. */
     .container .candy-img {
         height: 250px;
         width: 100%;

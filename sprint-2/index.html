@@ -2,51 +2,84 @@
 <html lang="en">
 
 <head>
+    <!-- Specifies the character encoding for the document -->
     <meta charset="UTF-8">
+
+    <!-- Sets the viewport to ensure proper rendering and touch zooming on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links to external CSS files for styling the webpage -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/candyMenu.css">
     <link rel="stylesheet" href="./css/carousel.css">
+
+    <!-- Adds a favicon for the website -->
     <link rel="shortcut icon" href="./images/retrocandy_favicon.png" type="image/x-icon">
+
+    <!-- Links to external JavaScript files, deferring execution until the page has loaded -->
     <script src="./js/starRating.js" defer></script>
     <script src="./js/candyHandler.js" defer></script>
+
+    <!-- Sets the title of the webpage -->
     <title>Home - Retro Candy</title>
 </head>
 
 <body>
+    <!-- Horizontal navigation bar -->
     <div class="nav-bar-horizontal">
+        <!-- Logo linking to the home page -->
         <a href="#"><img src="images/retrocandy_logo.png" class="logo" alt="Retro Candy Logo"></a>
+
         <div class="nav-bar-container" style="margin-right: 25px;">
+            <!-- Navigation links for the main sections of the website -->
             <a href="#" class="active">Home</a>
             <a href="shop.html">Shop</a>
             <a href="locations.html">Locations</a>
             <a href="contact.html">Contact</a>
             <a href="about.html">About Us</a>
         </div>
+
+        <!-- Hamburger menu icon for mobile navigation -->
         <span id="hamburger" class="hamburger">&#9776;</span>
     </div>
+
+    <!-- Vertical navigation bar for mobile screens -->
     <div id="vertical-nav-bar" class="nav-bar-vertical">
+        <!-- Close button for the vertical navigation bar -->
         <a href="javascript:void(0)" id="close-btn" class="close-btn">X</a>
+
+        <!-- Navigation links for the vertical navigation bar -->
         <a href="#" class="active">Home</a>
         <a href="shop.html">Shop</a>
         <a href="locations.html">Locations</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About Us</a>
     </div>
+
+    <!-- Main section of the webpage -->
     <div class="main-section">
+        <!-- Main heading for the webpage -->
         <h1>BEST CANDY IN NEW ZEALAND!</h1>
+
         <br><br><br><br>
+
         <div class="shop">
+            <!-- Container for the shop section -->
             <div class="category">
+                <!-- Category section -->
                 <div class="header" id="best-sellers">
                     <h3>BEST SELLERS</h3>
                     <a href="shop.html" class="button-2" style="margin-left: 20px;">View All →</a>
+                    <!-- Link to view all items in the shop -->
                 </div>
                 <br>
                 <div class="carousel-container">
+                    <!-- Container for the carousel -->
                     <button class="carousel-prev">&#10094;</button>
+                    <!-- Button to navigate to the previous item in the carousel -->
                     <button class="carousel-next">&#10095;</button>
+                    <!-- Button to navigate to the next item in the carousel -->
                     <div class="carousel">
                         <div class="carousel-item">
                             <div class="card">
@@ -231,17 +264,24 @@
                 <img width="25" style="margin-right: 5px;" src="./images/svg/shopping-cart-outline-svgrepo-com.svg"
                     alt="Shopping Cart">
                 <p>Shop All Candy </p>
+                <!-- Link to shop all candy -->
             </a>
             <br><br><br><br><br><br>
             <div class="category">
+                <!-- Category section -->
                 <div class="header" id="new-arrivals">
+                    <!-- Header for the new arrivals category -->
                     <h3>NEW ARRIVALS</h3>
                     <a href="shop.html" class="button-2" style="margin-left: 20px;">View All →</a>
+                    <!-- Link to view all items in the shop -->
                 </div>
                 <br>
                 <div class="carousel-container">
+                    <!-- Container for the carousel -->
                     <button class="carousel-prev">&#10094;</button>
+                    <!-- Button to navigate to the previous item in the carousel -->
                     <button class="carousel-next">&#10095;</button>
+                    <!-- Button to navigate to the next item in the carousel -->
                     <div class="carousel">
                         <div class="carousel-item">
                             <div class="card">
@@ -423,6 +463,7 @@
             </div>
             <br><br><br><br><br><br>
             <div class="candy-around-world">
+                <!-- Container for more information about Retro Candy -->
                 <img class="candy-img" src="./images/candy/1024px-Dülmen,_Viktorkirmes_--_2015_--_6463.jpg"
                     alt="Assorted Candy">
                 <div class="extra-info">
@@ -449,10 +490,13 @@
     </div>
     <br><br><br><br><br>
     <div class="footer">
+        <!-- Container for footer -->
         <div style="display: flex; justify-content: center;">
             <a href="index.html" style="height: fit-content;"><img src="./images/retrocandy_logo.png" class="logo-2"
                     alt="Retro Candy Logo"></a>
+            <!-- Logo -->
             <div class="footer-container">
+                <!-- Container for footer buttons -->
                 <div class="footer-btns">
                     <a href="shop.html" class="footer-main">Shop</a>
                     <a href="shop.html#best-sellers" class="footer-sub">Best Sellers</a>
@@ -481,6 +525,7 @@
         <hr>
         <br>
         <div class="footer-bottom">
+            <!-- Container for social links -->
             <p>© 2024 Retro Candy, Inc.</p>
             <div class="social-media">
                 <a href="https://x.com/"><img src="./images/svg/icons8-twitter.svg" alt="Twitter"></a>
@@ -491,6 +536,7 @@
         </div>
     </div>
     <div class="candy-view hide">
+        <!-- Viewing candy information -->
         <div class="candy-menu">
             <div class="container">
                 <img class="candy-img">
@@ -521,10 +567,12 @@
             <a class="close-btn">
                 <p>X</p>
             </a>
+            <!-- Closing candy information -->
         </div>
     </div>
 </body>
 <script>
+    // Loads all the candy when the page loads
     window.onload = function () {
         loadCandySection(document.querySelector("#best-sellers").parentElement, ['best-sellers']);
         loadCandySection(document.querySelector("#new-arrivals").parentElement, ['new']);

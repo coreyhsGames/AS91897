@@ -1,4 +1,5 @@
 .container {
+    /* Flex container for card layout, allowing for wrapping and centering */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -8,6 +9,7 @@
 }
 
 .card {
+    /* Individual card styling with background, shadow, and border */
     background-color: white;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -19,33 +21,39 @@
 }
 
 .card:hover {
+    /* Scale effect on hover for interactive feedback */
     transform: scale(1.05);
 }
 
 .card img {
+    /* Image styling to ensure it fills the card proportionally */
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
 .card h3 {
+    /* Title styling within the card */
     margin: 15px 0;
     color: #444;
 }
 
 .card p {
+    /* Paragraph styling within the card */
     margin: 0;
     color: #D322DD;
     padding: 5px 10px;
 }
 
 .card .hours {
+    /* Specific class for displaying hours within the card */
     font-size: 0.9em;
     color: #666;
     margin-bottom: 15px;
 }
 
 .card button {
+    /* Button styling within the card */
     background-color: #c907fb;
     color: white;
     padding: 10px 20px;
@@ -58,10 +66,12 @@
 }
 
 .card button:hover {
+    /* Change button color on hover for better UX */
     background-color: #d438fb;
 }
 
 h2 {
+    /* General heading styling with shadow and padding */
     background-color: #ffff;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     padding: 15px;
@@ -72,52 +82,61 @@ h2 {
 }
 
 .map {
+    /* Styling for a map element, ensuring it fits the container */
     border-radius: 0.77vh;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     width: 100%;
-  height: auto;
-  max-width: 1400px; /* Ensure the image doesn't exceed the container width */
+    height: auto;
+    max-width: 1400px; /* Ensure the image doesn't exceed the container width */
 }
 
 /* Responsive Styles */
 @media (max-width: 1300px) {
     h1 {
+        /* Font size adjustment for larger screens */
         font-size: 2rem;
     }
 
     p {
+        /* Paragraph font size adjustment for larger screens */
         font-size: 1.1rem;
     }
 }
 
 @media (max-width: 900px) {
     h1 {
+        /* Further adjustment for medium screens */
         font-size: 1.75rem;
     }
 
     p {
+        /* Paragraph font size adjustment for medium screens */
         font-size: 1rem;
     }
 }
 
 @media (max-width: 425px) {
     h1 {
+        /* Font size adjustment for small screens */
         font-size: 1.5rem;
     }
 
     p {
+        /* Maintain paragraph font size for small screens */
         font-size: 1rem;
     }
 }
 
 @media (max-width: 400px) {
     h1 {
+        /* Additional adjustment for very small screens */
         font-size: 1.25rem;
     }
 }
 
 @media (max-width: 350px) {
     h1 {
+        /* Final adjustment for the smallest screens */
         font-size: 1rem;
     }
 }

@@ -1,4 +1,5 @@
 .hidden {
+    /* Hides elements with opacity, blur, and translation effects. */
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
@@ -6,12 +7,14 @@
 }
 
 .show {
+    /* Shows elements by resetting opacity, blur, and translation effects. */
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
 
 .main-section {
+    /* Main section styling, centers content with flexbox. */
     margin-top: 25px;
     display: flex;
     flex-direction: column;
@@ -21,6 +24,7 @@
 }
 
 h1 {
+    /* Main heading styles, with font size, color, and background. */
     font-size: 3rem;
     color: #ffff;
     background-color: #e416b8;
@@ -30,10 +34,12 @@ h1 {
 }
 
 p {
+    /* Paragraph styling for font size. */
     font-size: 1.25rem;
 }
 
 .shop a.button-2 {
+    /* Styles for the secondary button, including font size and padding. */
     font-size: 1.5rem;
     text-decoration: none;
     color: #ffff;
@@ -44,40 +50,48 @@ p {
 }
 
 .shop a.button {
+    /* Primary button background color. */
     background-color: #e416b8;
 }
 
 .shop a.button:hover {
+    /* Hover effect for primary button. */
     background-color: #cf13a6;
 }
 
 .shop a.button-2 {
+    /* Secondary button background color and flex alignment. */
     background-color: #cb00ff;
     display: flex;
     align-items: center;
 }
 
 .shop a.button-2:hover {
+    /* Hover effect for secondary button. */
     background-color: #ac00d6;
 }
 
 .shop .category .header {
+    /* Flex container for category header, centers items. */
     display: flex;
     align-items: center;
 }
 
 .shop .category .header h3 {
+    /* Category header font size. */
     font-size: 1.5rem;
 }
 
 /* Star Ratings */
 .rating {
+    /* Container for star ratings with position and font size. */
     display: inline-block;
     position: relative;
     font-size: 1.563rem;
 }
 
 .rating label {
+    /* Positioning for rating labels to allow for overlaying stars. */
     position: absolute;
     top: 0;
     left: 0;
@@ -85,30 +99,18 @@ p {
 }
 
 .rating label:last-child {
+    /* Last label static positioning for stacking. */
     position: static;
 }
 
-.rating label:nth-child(1) {
-    z-index: 5;
-}
-
-.rating label:nth-child(2) {
-    z-index: 4;
-}
-
-.rating label:nth-child(3) {
-    z-index: 3;
-}
-
-.rating label:nth-child(4) {
-    z-index: 2;
-}
-
-.rating label:nth-child(5) {
-    z-index: 1;
-}
+.rating label:nth-child(1) { z-index: 5; }
+.rating label:nth-child(2) { z-index: 4; }
+.rating label:nth-child(3) { z-index: 3; }
+.rating label:nth-child(4) { z-index: 2; }
+.rating label:nth-child(5) { z-index: 1; }
 
 .rating label input {
+    /* Hides input for ratings while maintaining functionality. */
     position: absolute;
     top: 0;
     left: 0;
@@ -116,25 +118,30 @@ p {
 }
 
 .rating label .icon {
+    /* Star icon styles, transparent by default. */
     float: left;
     color: transparent;
 }
 
 .rating label:last-child .icon {
+    /* Last star colored black for visibility. */
     color: #000;
 }
 
 .rating label:last-child .icon.gold {
+    /* Gold color for the last star. */
     color: #f8c82d;
 }
 
 .candy-around-world {
+    /* Flex container for candy images, arranged in a row. */
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .candy-around-world img.candy-img {
+    /* Styles for candy images, including sizing and border. */
     border-radius: 0.77vh;
     object-fit: cover;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -143,12 +150,14 @@ p {
 }
 
 .candy-around-world .button-2 img {
+    /* Size for images within the secondary button. */
     width: 25px;
     height: 25px;
     margin-right: 5px;
 }
 
 .extra-info {
+    /* Flex container for additional information, centered. */
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -159,23 +168,28 @@ p {
 /* Responsive Styles */
 @media (max-width: 1300px) {
     h1 {
+        /* Adjusting font size for larger tablets. */
         font-size: 2rem;
     }
 
     .shop .category .header h3 {
+        /* Adjusting category header font size. */
         font-size: 1.25rem;
     }
 
     p {
+        /* Adjusting paragraph font size. */
         font-size: 1.1rem;
     }
 
     .shop a.button,
     .shop a.button-2 {
+        /* Adjusting button font size. */
         font-size: 1.2rem;
     }
 
     .candy-around-world img.candy-img {
+        /* Resizing candy images for larger tablets. */
         width: 350px;
         height: 350px;
     }
@@ -183,30 +197,37 @@ p {
 
 @media (max-width: 900px) {
     h1 {
+        /* Further reducing font size for tablets and small screens. */
         font-size: 1.75rem;
     }
 
     p {
+        /* Adjusting paragraph font size for smaller devices. */
         font-size: 1rem;
     }
 
     .shop .category .header h3 {
+        /* Adjusting category header size for smaller devices. */
         font-size: 1.2rem;
     }
 
     .shop .category .card .card-info h4 {
+        /* Font size for card info heading. */
         font-size: 1rem;
     }
 
     .shop .category .card .card-info p {
+        /* Font size for card info paragraph. */
         font-size: 1rem;
     }
 
     .rating {
+        /* Reducing font size for ratings on smaller devices. */
         font-size: 1.25rem;
     }
 
     .candy-around-world img.candy-img {
+        /* Resizing candy images for smaller devices. */
         width: 300px;
         height: 300px;
     }
@@ -214,19 +235,23 @@ p {
 
 @media (max-width: 425px) {
     h1 {
+        /* Reducing font size for mobile devices. */
         font-size: 1.5rem;
     }
 
     p {
+        /* Adjusting paragraph font size for mobile. */
         font-size: 1rem;
     }
 
     .candy-around-world {
+        /* Changing flex direction for mobile to stack items. */
         flex-direction: column;
         align-items: center;
     }
 
     .extra-info {
+        /* Adjusting margin for extra info on mobile. */
         margin-left: 0px;
         margin-top: 25px;
     }
@@ -234,12 +259,14 @@ p {
 
 @media (max-width: 400px) {
     h1 {
+        /* Further reducing font size for very small screens. */
         font-size: 1.25rem;
     }
 }
 
 @media (max-width: 350px) {
     h1 {
+        /* Minimum font size for extremely small screens. */
         font-size: 1rem;
     }
 }

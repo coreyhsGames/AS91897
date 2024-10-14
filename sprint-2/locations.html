@@ -2,16 +2,26 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS stylesheets -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/locations.css">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./images/retrocandy_favicon.png" type="image/x-icon">
+    
+    <!-- Deferred JavaScript for better page loading -->
     <script src="./js/locations.js" defer></script>
+    
+    <!-- Title of the page -->
     <title>Locations - Retro Candy</title>
 </head>
 
 <body>
+    <!-- Horizontal navigation bar -->
     <div class="nav-bar-horizontal">
         <a href="index.html"><img src="images/retrocandy_logo.png" class="logo" alt="Retro Candy Logo"></a>
         <div class="nav-bar-container" style="margin-right: 25px;">
@@ -23,6 +33,8 @@
         </div>
         <span id="hamburger" class="hamburger">&#9776;</span>
     </div>
+    
+    <!-- Vertical navigation bar for mobile -->
     <div id="vertical-nav-bar" class="nav-bar-vertical">
         <a href="javascript:void(0)" id="close-btn" class="close-btn">X</a>
         <a href="index.html" class="active">Home</a>
@@ -30,21 +42,31 @@
         <a href="#" id="vertical-about-btn">Link 2</a>
         <a href="#">Link 3</a>
     </div>
+    
+    <!-- Main content section -->
     <div class="main-section">
         <h1>LOCATIONS</h1>
         <h2>Find a Retro Candy store near you.<br>Click <span class="important-txt">Get Directions</span> on one of our stores to get started.</h2>
+        <!-- Container for dynamically loaded locations -->
         <div class="container" id="locations-container"></div>
+        
+        <!-- Placeholder for map -->
         <br><br><br>
         <h1 id="map">MAP</h1>
         <br>
         <img src="./images/map.jpg" class="map" alt="Map of Retro Candy Locations.">
     </div>
+    
+    <!-- Spacing for footer -->
     <br><br><br><br><br>
+    
+    <!-- Footer section -->
     <div class="footer">
         <div style="display: flex; justify-content: center;">
             <a href="index.html" style="height: fit-content;"><img src="./images/retrocandy_logo.png" class="logo-2"
                     alt="Retro Candy Logo"></a>
             <div class="footer-container">
+                <!-- Footer navigation links -->
                 <div class="footer-btns">
                     <a href="shop.html" class="footer-main">Shop</a>
                     <a href="shop.html#best-sellers" class="footer-sub">Best Sellers</a>
@@ -53,14 +75,17 @@
                     <a href="shop.html#us-candy" class="footer-sub">US Candy</a>
                     <a href="shop.html#uk-candy" class="footer-sub">UK Candy</a>
                 </div>
+                <!-- Additional footer links -->
                 <div class="footer-btns">
                     <a href="locations.html" class="footer-main">Locations</a>
                     <a href="locations.html#map" class="footer-sub">Map</a>
                 </div>
+                <!-- More footer links -->
                 <div class="footer-btns">
                     <a href="contact.html" class="footer-main">Contact</a>
                     <a href="contact.html#msg-us" class="footer-sub">Message Us</a>
                 </div>
+                <!-- Even more footer links -->
                 <div class="footer-btns">
                     <a href="about.html" class="footer-main">About Us</a>
                     <a href="about.html#our-promise" class="footer-sub">Our Promise</a>
@@ -69,6 +94,7 @@
                 </div>
             </div>
         </div>
+        <!-- Copyright and social media icons -->
         <br><br><br>
         <hr>
         <br>
@@ -83,13 +109,12 @@
         </div>
     </div>
 </body>
-<script>
-    // Vertical navigation bar
-    const verticalNavBar = document.getElementById('vertical-nav-bar');
 
+<!-- JavaScript for handling the vertical navigation bar -->
+<script>
+    const verticalNavBar = document.getElementById('vertical-nav-bar');
     const hamburger = document.getElementById('hamburger');
     const closeBtn = document.getElementById('close-btn');
-
     const vertAboutBtn = document.getElementById('vertical-about-btn');
 
     hamburger.addEventListener('click', function () {
