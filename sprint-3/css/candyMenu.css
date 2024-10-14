@@ -22,7 +22,7 @@
     position: relative;
 }
 
-.close-btn {
+.candy-menu .close-btn {
     /* Styles for the close button, positioned absolutely within the candy menu. */
     background-color: #e416b8;
     color: #fff;
@@ -40,7 +40,7 @@
     cursor: pointer;
 }
 
-.close-btn p {
+.candy-menu .close-btn p {
     /* Prevents text selection for <p> inside close button. */
     user-select: none;
 }
@@ -214,7 +214,7 @@
         font-size: 1rem;
     }
 
-    .close-btn {
+    .candy-menu .close-btn {
         height: 35px;
         width: 35px;
     }
